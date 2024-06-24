@@ -1,8 +1,5 @@
 # Churn_App
-Machine Learning models embedded into a streamlit Weapp
-
-# Streamlit_App
-Repo for deploying my first Customer Churn prediction models using streamlit
+Machine Learning models embedded into a streamlit Webapp
 
 <a name="readme-top"></a>
 
