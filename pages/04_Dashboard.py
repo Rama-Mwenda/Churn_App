@@ -107,9 +107,7 @@ def KPI_plots():
     col1,col2,col3,col4 = st.columns(4)
     with col1:
         fig = st.metric(value=df['Churn'].sum(), label='Churned Customers')
-    with col2:
-        fig = st.bar_chart(df.groupby('Churn').value_counts().reset_index(), x=df.columns, y=df)
-
+    
 colA, colB = st.columns(2)
 with colA:
     EDA = st.button('EDA Dashboard', use_container_width=True)
