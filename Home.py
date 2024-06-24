@@ -9,4 +9,4 @@ st.set_page_config(
 
 
 st.title('Welcome to our Fabulous Churn Predictor.')
-St.write('Please Log in to continue')
+st.write('Please Log in to continue')
