@@ -24,3 +24,6 @@ tenure,monthlycharges,totalcharges,partner,dependents,phoneservice,multiplelines
 7,33,231,Yes,Yes,Yes,Yes,DSL,Yes,No,No,No,No,No,Two year,No,Mailed check,0,Female,Stay,7.48,92.52,logistic_regression
 7,33,231,Yes,Yes,Yes,Yes,DSL,Yes,No,No,No,No,No,Two year,No,Electronic check,0,Female,Stay,12.09,87.91,logistic_regression
 7,33,231,Yes,Yes,Yes,Yes,DSL,Yes,No,No,No,No,No,Two year,Yes,Electronic check,0,Female,Stay,17.13,82.87,logistic_regression
+1,1,1,Yes,Yes,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,0,Male,Churn,51.11,48.89,adaboost
+1,1,1,Yes,Yes,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,0,Male,Stay,39.77,60.23,logistic_regression
+1,1,1,Yes,Yes,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,0,Male,Churn,57.0,43.0,random_forest

@@ -8,5 +8,6 @@ st.set_page_config(
     layout= 'wide')
 
 
-st.title('Welcome to our Fabulous Churn Predictor.')
+st.title('Welcome to our Customer Churn Predictor App')
 st.write('Please Log in to continue')
+
