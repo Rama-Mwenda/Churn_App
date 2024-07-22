@@ -1,5 +1,4 @@
 import streamlit as st
-import numpy as np
 import pandas as pd
 import os
 import time
@@ -13,16 +12,16 @@ st.set_page_config(
 st.title(' Prediction History')
 
 def load_history():
-    if os.path.exists('data/history.csv'):
-        history_df = pd.read_csv('data/history.csv')
+    if os.path.exists('Data/history.csv'):
+        history_df = pd.read_csv('Data/history.csv')
     else:
         history_df = pd.DataFrame()  # Create an empty DataFrame if the file doesn't exist
     return history_df
 
 def clear_history():
-    if os.path.exists('data/history.csv'):
+    if os.path.exists('Data/history.csv'):
         with st.spinner('Cleaning past history...'):
-            os.remove('data/history.csv')
+            os.remove('Data/history.csv')
             time.sleep(3)
         st.success('History Cleared Succesfully')
         time.sleep(3)  # Add a delay
