@@ -11,7 +11,7 @@ st.set_page_config(
 st.title('Check the data used in building this Web app')
 st.write('Click the buttons to show the dataset')
 
-df = pd.read_csv('./data/Dataset.csv')
+df = pd.read_csv('Data/Dataset.csv')
 
 #show numeric columns
 def show_numerics():

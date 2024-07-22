@@ -108,7 +108,7 @@ Clone this repository to your desired folder:
 Change into the cloned repository
 
 ```sh
-  cd Telco_churn_app
+  cd churn_app
   
 ```
 
@@ -116,14 +116,14 @@ Create a virtual environment
 
 ```sh
 
-python -m venv env
+python -m venv venv
 
 ```
 
 Activate the virtual environment
 
 ```sh
-    env/Scripts/activate
+    .venv/Scripts/activate
 ```
 
 ### Install

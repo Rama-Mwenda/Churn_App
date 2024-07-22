@@ -28,3 +28,17 @@ tenure,monthlycharges,totalcharges,partner,dependents,phoneservice,multiplelines
 1,1,1,Yes,Yes,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,0,Male,Stay,39.77,60.23,logistic_regression
 1,1,1,Yes,Yes,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,0,Male,Churn,57.0,43.0,random_forest
 1,1,1,Yes,Yes,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,0,Male,Stay,39.77,60.23,logistic_regression
+18,1,18,Yes,Yes,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,0,Male,Churn,50.37,49.63,adaboost
+18,1,18,Yes,Yes,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,0,Male,Stay,14.57,85.43,logistic_regression
+25,59,1475,No,Yes,Yes,Yes,Fiber optic,Yes,Yes,No,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,0,Female,Churn,50.28,49.72,adaboost
+1,1,1,Yes,Yes,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,0,Male,Stay,39.77,60.23,logistic_regression
+1,53,53,Yes,Yes,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,0,Male,Churn,54.6,45.4,logistic_regression
+32,53,1696,Yes,Yes,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,0,Male,Stay,21.25,78.75,logistic_regression
+46,47,2162,Yes,Yes,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,0,Male,Stay,9.82,90.18,logistic_regression
+34,30,1020,Yes,Yes,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,0,Male,Stay,35.0,65.0,random_forest
+34,30,1020,Yes,Yes,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,0,Male,Churn,50.18,49.82,adaboost
+34,58,1972,Yes,Yes,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,0,Male,Churn,50.18,49.82,adaboost
+12,12,144,Yes,Yes,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,0,Male,Churn,50.37,49.63,adaboost
+12,12,144,Yes,Yes,Yes,Yes,Fiber optic,No,Yes,Yes,Yes,Yes,No,Month-to-month,Yes,Electronic check,0,Male,Churn,50.32,49.68,adaboost
+44,12,528,Yes,Yes,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,No,Month-to-month,Yes,Electronic check,0,Male,Stay,2.75,97.25,logistic_regression
+44,69,3036,Yes,Yes,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,No,Month-to-month,Yes,Electronic check,0,Male,Stay,19.37,80.63,logistic_regression

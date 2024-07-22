@@ -3,7 +3,6 @@ import numpy as np
 import pandas as pd
 import plotly_express as px
 
-
 st.set_page_config(
     page_title="Churn Prediction App",
     page_icon="👋",
@@ -11,15 +10,19 @@ st.set_page_config(
 )
 
 
-df = pd.read_csv('./data/Dataset.csv')
+## -- LOAD DATA --
+df = pd.read_csv('Data/Dataset.csv')
+
 
 def numeric(df):
     numeric = df.select_dtypes(include=[np.number])
     return numeric
+
 def categorical(df):
     categorical = df.select_dtypes(exclude=np.number)
     return categorical
 
+    
 st.session_state['Button'] = None
 st.write('Select a Dahsboard to Display')
 
@@ -67,7 +70,7 @@ def Univariate_plots():
         fig.update_yaxes(visible=False, showticklabels=False)
         st.plotly_chart(fig)
 
-               
+            
 @st.spinner('Loading',_cache = True)                
 def Bivariate_plots():
     st.title('Bivariate Analysis')
@@ -89,12 +92,12 @@ def Bivariate_plots():
     for i, col in enumerate(numbers.columns):
         data = df.groupby('Churn')[col].value_counts().reset_index()
         fig = px.bar(data,
-                      x=data[col],
-                      y=data['count'],
-                      color=data['Churn'],
-                      title= (f"Churn vs {col}"),
-                      color_discrete_map = {'German Shephard': 'rgb(255,255,0)'}
-                      )
+                    x=data[col],
+                    y=data['count'],
+                    color=data['Churn'],
+                    title= (f"Churn vs {col}"),
+                    color_discrete_map = {'German Shephard': 'rgb(255,255,0)'}
+                    )
         st.plotly_chart(fig)
     return
 
@@ -107,6 +110,7 @@ def KPI_plots():
     col1,col2,col3,col4 = st.columns(4)
     with col1:
         fig = st.metric(value=df['Churn'].sum(), label='Churned Customers')
+
     
 colA, colB = st.columns(2)
 with colA:
@@ -124,7 +128,6 @@ if st.session_state['Button'] == 'EDA':
 
 elif st.session_state['Button'] == 'KPI':
     KPI_plots()
+
     
-else:
-    pass
-    
+

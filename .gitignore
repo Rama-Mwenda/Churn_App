@@ -1,4 +1,6 @@
 .secrets
 /churn_app
 .toml
-
+.venv
+generate_keys.py
+hashed_pw.pkl
