@@ -2,12 +2,16 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import plotly_express as px
+import streamlit_authenticator as stauth
 
 st.set_page_config(
     page_title="Churn Prediction App",
     page_icon="👋",
     layout= 'wide'
 )
+
+# -- LOG OUT --
+
 
 
 ## -- LOAD DATA --
@@ -129,5 +133,5 @@ if st.session_state['Button'] == 'EDA':
 elif st.session_state['Button'] == 'KPI':
     KPI_plots()
 
-    
+  
 

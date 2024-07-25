@@ -13,7 +13,7 @@ st.set_page_config(
     page_icon="👋",
     layout= 'wide'
 )
-
+   
 
 st.title('Select a Model and Predict the Future 🔮')
 
@@ -131,9 +131,9 @@ def predict():
         with col6:
             MonthlyCharges = st.slider('MonthlyCharges', min_value=1, key='MonthlyCharges')
         
-        with col7:
+        with col7: #auto calculate total charge
             TotalCharges = MonthlyCharges * tenure
-            st.write(f'TotalCharges: ${TotalCharges:.2f}', key='total_charges_display')
+            st.metric(label='Total Charges', value=TotalCharges, )
                   
         if st.form_submit_button('Submit'):
             st.session_state['button_clicked'] = True
@@ -192,15 +192,15 @@ def predict():
             input_features['model_used'] = [st.session_state['selected_model']]
             
             # Check if the history.csv file exists
-            if os.path.exists('./data/history.csv'):
+            if os.path.exists('Data/history.csv'):
                 # If it exists, read the existing data and append the input features
-                history_data = pd.read_csv('./data/history.csv')
+                history_data = pd.read_csv('Data/history.csv')
                 history_data = pd.concat([history_data, input_features], ignore_index=True)
             else:
                 # If it doesn't exist, create a new dataframe with the input features
                 history_data = input_features
             
-            history_data.to_csv('./data/history.csv', index=False)
+            history_data.to_csv('Data/history.csv', index=False)
 
                        
 # Call the data function directly
